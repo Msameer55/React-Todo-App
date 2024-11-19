@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(112, 108, 108);
+  font-size: 18px;
+
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  padding: 15px;
+  margin: 12px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 13px 25px;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+  margin: 0 4px;
+}
+
+.todo-inner button {
+  background-color: #4f94d8;
+  color: #fff;
+}
+
+.todo-data {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
+table thead {
+  background-color: rgb(64, 120, 61);
+  color: #fff;
+  border: none;
+
+}
+
+table tr {
+  border: 1px solid #fff;
+}
+
+table tr th,
+table tr td {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+table button.edit {
+  background-color: #4f94d8;
+  color: #fff;
+}
+
+table button.delete {
+  background-color: lightcoral;
+  color: #fff;
 }
